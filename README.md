@@ -20,7 +20,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* Planning to add soon!
 
 ## Video Walkthrough
 
@@ -32,7 +32,13 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The android emulator often pops up a message stating that the System UI is not responding.
+I was able to solve this by changing some of the AVD configuration.
+None of those changes were available through the GUI, instead I needed to make those changes directly to the config.ini file for that specific emulation configuration.
+The updated config file had these changes:
+    hw.audioInput=no    ; changed from: hw.audioInput=yes
+    hw.gpu.mode=host    ; changed from: hw.gpu.mode=auto
+    hw.mainKeys=yes    ; changed from: hw.mainKeys=no
 
 ## License
 
